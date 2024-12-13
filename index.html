@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <script src="js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- fullpage -->
+    <script src="js/jquery.fullpage.js"></script>
+    <link rel="stylesheet" href="css/jquery.fullpage.css">
+    <script>
+        $(function () {
+            // fullpage
+            var page = $('#fullpage').fullpage({
+                menu: '.gnb',
+                anchors: ['section1', 'section2', 'section3', 'section4'],
+                navigation: true,
+                navigationPosition: 'right',
+                dragAndMove: true,
+            });
+
+            // 
+           
+            $('.section4_left img').mouseover(function(){
+                $('.section4_left .a_title').hide();
+            });
+            $('.section4_left img').mouseout(function(){
+                $('.section4_left .a_title').show();
+            });
+            // 
+           
+            $('.section4_right img').mouseover(function(){
+                $('.section4_right .a_title').hide();
+            });
+            $('.section4_right img').mouseout(function(){
+                $('.section4_right .a_title').show();
+            });
+        });
+    </script>
+    <title>발표</title>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section section1">
+            <div class="section1_t">웹사이트 제작 & 반응형 리뉴얼</div>
+            <div class="logo"><img src="img/logo.png" alt=""></div>
+            <div>
+                <ul>
+                    <li>최유림</li>
+                    <li>엄진희</li>
+                    <li>허유리</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section section2">
+            <div class="title">
+                <div class="title_img"></div>
+                <h1>롬앤을 선택한 이유</h1>
+            </div>
+            <div class="text_box">
+                <div class="circle"></div>
+                <h2><span>1.</span> 기존사이트의 한계</h2>
+                <p class="first_p"><span class="line">스마트폰 앱 형식으로만 제공</span>되어 웹으로 이용하는 고객의 불편함이 있어보인다.</p><br>
+                <p>다양한 화면 크기에서 접근 가능한 <span class="line">반응형 웹사이트</span>로 개선할 필요성이 있다.</p>
+            </div>
+            <div class="text_box box2">
+                <div class="circle"></div>
+                <h2><span>2.</span> 이미지 활용 가능성</h2>
+                <p class="first_p">화장품 브랜드 특성상 <span class="line">고화질 이미지와 비주얼 콘텐츠</span>가 많아
+                웹 환경에서 사이트를 제작할 경우 <span class="line">시각적인 임팩트</span>를 줄 수 있다.</p>
+            </div>
+            <div class="text_box box2">
+                <div class="circle"></div>
+                <h2><span>3.</span>브랜드 활동 노출 부족</h2>
+                <p class="first_p">오픈오피스와 기부 등 <span class="line">브랜드 가치를 높이는 요소들이 보이지 
+                    않는 메뉴에 숨겨져 있어</span> 사용자들에게 충분히 강조되지 못한다.</p>
+            </div>
+            
+        </div>
+        
+        <div class="section section3">
+            <div class="title">
+                <div class="title_img"></div>
+                <h1>개선 방향</h1>
+            </div>
+            <div class="text_box">
+                <div class="circle"></div>
+                <h2><span>1.</span> 다양한 디바이스 호환성 증가</h2>
+                <p class="first_p">반응형 웹사이트로 제작하여 <span class="line">다양한 기기에 최적화된 화면을 제공</span> 할 수 있다.</p>
+            </div>
+            <div class="text_box box2">
+                <div class="circle"></div>
+                <h2><span>2.</span>숨겨져 있는 브랜드 활동을 강조</h2>
+                <p class="first_p">메인 페이지에 <span class="line">오픈오피스, 기부 활동, 룩북</span> 관련 섹션 추가.</p><br>
+                <p>사용자 관심을 끌기 위해 <span class="line">시각적 강조와 인터랙티브 요소 도입</span>.
+                </p><br>
+                <p>기존 사이트의 오픈오피스는 게시글 형태로만 올려져 있기에 <span class="line">별도 페이지를 만들어 활동을 강조</span> 할 수 있도록 제작.</p>
+            </div>
+            <div class="text_box box2">
+                <div class="circle"></div>
+                <h2><span>3.</span>판매 중인 제품 강조</h2>
+                <p class="first_p">화장품 사이트인 것에 비해 기존 사이트는 메인페이지에 이벤트관련 내용만 주로 있고 <span class="line">제품을 찾으려면 따로 메뉴를 눌러 들어가야 볼 수 있다</span>.
+                </p><br>
+                <p><span class="line">신제품과 베스트 제품을 상단에 배치</span>하여 사이트에 방문하는 고객의 주요 목적인 <span class="line">제품 구매를 원활하게 할 수 있도록 구성 변경</span>을 한다.
+                </p>
+            </div>
+        </div>
+
+        <div class="section section4">
+            <div class="section4_box">
+                <div class="section4_left">
+                    <a href="#" class="a_title">롬앤 사이트 바로가기</a>
+                    <a href="https://romand.co.kr/"><img src="img/site.png" alt=""></a>
+                </div>
+                <div class="section4_right">
+                    <a href="#" class="a_title">리뉴얼 사이트 바로가기</a>
+                    <a href="https://yurim0315.github.io/rom-nd_2/"><img src="img/site2.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
